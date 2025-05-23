@@ -43,7 +43,8 @@ const App: React.FC = () => {
       setUserApiKey(storedApiKey);
     } else {
       setApiKeyWarning("API Key not set. Please configure it in Settings to enable image generation.");
-      setIsSettingsModalOpen(true); // Prompt user to set API key
+      // Don't automatically open settings modal on first load
+      // Just show the warning and let the user click the settings button themselves
     }
 
     if (storedModel && AVAILABLE_IMAGE_MODELS.some(m => m.key === storedModel)) {
