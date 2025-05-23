@@ -1,4 +1,4 @@
-# PixelSpark AI Image Generator Studio ✨
+# PixelSpark - AI Image Generator Studio ✨
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -24,7 +24,7 @@ If you prefer, you can also self-host or deploy your own instance using the inst
 
 ## Preview
 
-![PixelSpark Home Page Preview Screenshot](./assets/screenshot1.png)
+![PixelSpark Home Page Preview Screenshot](src/assets/screenshot1.png)
 *Main interface showing the image generation workflow*
 
 ## Getting Started
@@ -32,6 +32,7 @@ If you prefer, you can also self-host or deploy your own instance using the inst
 Everything you need to install, run, and deploy PixelSpark.
 
 ### Prerequisites
+
 - Node.js (v16+)
 - Google Gemini API key ([Get one here](https://makersuite.google.com/app/apikey))
 
@@ -57,12 +58,14 @@ Everything you need to install, run, and deploy PixelSpark.
 ### Deployment
 
 #### Deploy to Vercel
+
 1. Fork this repository to your GitHub account
 2. Sign in to [Vercel](https://vercel.com) with your GitHub account
 3. Click "New Project" and select your forked repository
 4. Use default settings (Vite framework preset) and click "Deploy"
 
 #### Deploy Anywhere
+
 The app is built with Vite and can be deployed to any static hosting service:
 
 1. Build the production version:
@@ -77,21 +80,25 @@ The app is built with Vite and can be deployed to any static hosting service:
 Follow these steps to generate and download images:
 
 ### 1. Provide API Key
+
 - Enter your Gemini API key in the Settings modal when prompted
 - Your API key is stored locally in your browser and never sent to any server
 
 ### 2. Generate Images
+
 - Enter a detailed text prompt describing the image you want to create, or choose one of the sample prompts by pressing 'tab' on the one you like
 - Select your preferred aspect ratio (Square, Banner, Portrait, or Cover)
 - Choose which size variants of the image you want to generate
 - Click "Generate" to create your images
 
 ### 3. Select Images
+
 - Review the generated images and select the ones you like
 - You can regenerate the images, or send a follow-up prompt to refine the image generations
 - Or, you can proceed to finalization
 
 ### 4. Finalize and Download
+
 - Review all selected images with their size variations (hover over variants to show image previews)
 - Download individual images or all of them as a ZIP archive or separate file downloads
 
@@ -100,12 +107,14 @@ Follow these steps to generate and download images:
 A quick look at how PixelSpark works under the hood.
 
 ### Project Structure
+
 - **React Frontend**: Built with React and TypeScript
 - **Google Gemini API**: Uses Google's Gemini AI service for image generation
 - **Local Processing**: All image processing (resizing, cropping) happens locally in the browser
 - **No Server Required**: Fully client-side application with no backend dependencies
 
 ### Size Variants
+
 - **Square (1:1)**: 256x256, 128x128, 96x96, 64x64, 48x48, 32x32, 24x24, 16x16
 - **Banner (16:9)**: 1920x1080, 1280x720, 960x540, 640x360
 - **Portrait (4:5)**: 1080x1350, 800x1000, 400x500
@@ -127,6 +136,7 @@ A quick look at how PixelSpark works under the hood.
 Contributions, feedback, and bug reports are welcome! Please feel free to open an issue, provide feature suggestions/improvements, or submit a pull request on the GitHub repository.
 
 ### Development
+
 1. Fork the repository
 2. Clone your fork: `git clone https://github.com/your-username/pixelspark.git`
 3. Install dependencies: `npm install`
